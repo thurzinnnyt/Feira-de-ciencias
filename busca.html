@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Busca por Soluções - Projeto Energia Eólica</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #F0F8FF; }
+        .text-shadow { text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); }
+    </style>
+</head>
+<body class="bg-[#F0F8FF] text-[#002B5B]">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 md:px-8 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-black text-[#00449E]">Energia Eólica & Aves</a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-[#005CB9] font-bold">Início</a>
+                <a href="ideia.html" class="text-gray-600 hover:text-[#005CB9] font-bold">A Pesquisa</a>
+                <a href="problema.html" class="text-gray-600 hover:text-[#005CB9] font-bold">O Problema</a>
+                <a href="busca.html" class="text-[#005CB9] font-bold border-b-2 border-[#005CB9]">A Solução</a>
+                <a href="feira.html" class="bg-[#005CB9] text-white px-4 py-2 rounded-full hover:bg-[#00449E] font-bold transition-colors">O Dia da Feira</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-[#00449E] focus:outline-none"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button>
+            </div>
+        </nav>
+        <div id="menu-mobile" class="hidden md:hidden bg-white"><a href="index.html" class="block px-8 py-3 text-gray-700 hover:bg-gray-100">Início</a><a href="ideia.html" class="block px-8 py-3 text-gray-700 hover:bg-gray-100">A Pesquisa</a><a href="problema.html" class="block px-8 py-3 text-gray-700 hover:bg-gray-100">O Problema</a><a href="busca.html" class="block px-8 py-3 text-gray-700 hover:bg-gray-100">A Solução</a><a href="feira.html" class="block px-8 py-3 text-gray-700 hover:bg-gray-100">O Dia da Feira</a></div>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-8 mt-10">
+        <div class="bg-white rounded-xl shadow-lg p-8 md:p-12">
+            <h1 class="text-4xl md:text-5xl font-black text-[#00449E] text-center">A Busca Pela Solução</h1>
+            <p class="text-center text-gray-600 mt-2">Não bastava apontar o problema, queríamos encontrar a solução.</p>
+            
+            <div class="mt-12 space-y-10">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="text-center p-6 bg-gray-100 rounded-lg">
+                        <div class="text-7xl">🤔</div>
+                        <h3 class="font-bold text-xl mt-2">A Pergunta-Chave</h3>
+                    </div>
+                    <p class="text-lg text-gray-700 flex-1">
+                        A nossa questão era clara: "Como podemos alertar as aves ou parar as turbinas a tempo?". Pensámos em várias ideias: usar sons, luzes, ou até pintar as pás. Muitas dessas soluções já tinham sido testadas, com sucesso limitado. Precisávamos de algo mais inteligente e eficaz.
+                    </p>
+                </div>
+
+                <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+                     <div class="text-center p-6 bg-gray-100 rounded-lg">
+                        <div class="text-7xl">💡</div>
+                        <h3 class="font-bold text-xl mt-2">O Momento "Eureka!"</h3>
+                    </div>
+                    <p class="text-lg text-gray-700 flex-1">
+                        A resposta veio da área mais moderna da tecnologia: a <span class="font-bold text-[#00449E]">Inteligência Artificial</span>. Encontrámos artigos sobre sistemas emergentes que usavam câmaras de alta resolução e IA para monitorizar o céu. Foi o momento "Eureka!". A tecnologia não só via as aves, mas era capaz de identificar espécies protegidas e prever a sua trajetória de voo em tempo real.
+                    </p>
+                </div>
+
+                 <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="text-center p-6 bg-gray-100 rounded-lg">
+                        <div class="text-7xl">🛰️</div>
+                        <h3 class="font-bold text-xl mt-2">A Tecnologia IdentiFlight</h3>
+                    </div>
+                    <p class="text-lg text-gray-700 flex-1">
+                       Aprofundando a pesquisa, descobrimos o sistema <span class="font-bold">IdentiFlight</span>. Ele era a materialização de tudo o que procurávamos. Câmaras que detetam o movimento, uma IA que analisa e um sistema que envia um comando para a turbina reduzir a velocidade ou parar. Era a prova de que a tecnologia podia, sim, criar uma harmonia entre a produção de energia e a proteção da vida selvagem. O nosso projeto tinha agora um final feliz para contar.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center mt-12 py-8 border-t-2 border-[#89B9EE]">
+        <p class="text-sm text-gray-500">Navegue para a próxima etapa: <a href="feira.html" class="text-[#005CB9] font-bold hover:underline">O Dia da Feira de Ciências</a></p>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const menuMobile = document.getElementById('menu-mobile');
+        if(menuBtn){
+            menuBtn.addEventListener('click', () => {
+                menuMobile.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+</html>

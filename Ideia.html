@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Primeira Ideia - Projeto Energia Eólica</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #F0F8FF; }
+        .text-shadow { text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); }
+    </style>
+</head>
+<body class="bg-[#F0F8FF] text-[#002B5B]">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 md:px-8 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-black text-[#00449E]">Energia Eólica & Aves</a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-[#005CB9] font-bold">Início</a>
+                <a href="ideia.html" class="text-[#005CB9] font-bold border-b-2 border-[#005CB9]">A Pesquisa</a>
+                <a href="problema.html" class="text-gray-600 hover:text-[#005CB9] font-bold">O Problema</a>
+                <a href="busca.html" class="text-gray-600 hover:text-[#005CB9] font-bold">A Solução</a>
+                <a href="feira.html" class="bg-[#005CB9] text-white px-4 py-2 rounded-full hover:bg-[#00449E] font-bold transition-colors">O Dia da Feira</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-[#00449E] focus:outline-none"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button>
+            </div>
+        </nav>
+        <div id="menu-mobile" class="hidden md:hidden bg-white"><a href="index.html" class="block px-8 py-3 text-gray-700 hover:bg-gray-100">Início</a><a href="ideia.html" class="block px-8 py-3 text-gray-700 hover:bg-gray-100">A Pesquisa</a><a href="problema.html" class="block px-8 py-3 text-gray-700 hover:bg-gray-100">O Problema</a><a href="busca.html" class="block px-8 py-3 text-gray-700 hover:bg-gray-100">A Solução</a><a href="feira.html" class="block px-8 py-3 text-gray-700 hover:bg-gray-100">O Dia da Feira</a></div>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-8 mt-10">
+        <div class="bg-white rounded-xl shadow-lg p-8 md:p-12">
+            <h1 class="text-4xl md:text-5xl font-black text-[#00449E] text-center">A Primeira Ideia: O Ponto de Partida</h1>
+            <p class="text-center text-gray-600 mt-2">Toda grande jornada começa com um único passo. O nosso foi escolher um tema.</p>
+            
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="text-center">
+                    <div class="text-8xl">💡</div>
+                    <h2 class="text-3xl font-bold text-[#005CB9] mt-4">Por que Energia Eólica?</h2>
+                </div>
+                <div>
+                    <p class="text-lg text-gray-700 mb-4">
+                        Quando o tema da Feira de Ciências foi anunciado, nosso grupo sabia que queria trabalhar com algo relevante para o futuro do planeta. A <span class="font-bold text-[#00449E]">energia renovável</span> foi uma escolha natural.
+                    </p>
+                    <p class="text-lg text-gray-700">
+                        Dentre as opções, a energia eólica se destacou. As imagens das turbinas gigantes, girando em harmonia com o vento para gerar eletricidade limpa, sempre nos fascinaram. Parecia o símbolo perfeito de inovação e sustentabilidade. Nossa ideia inicial era simples: criar um infográfico mostrando o crescimento e os benefícios da energia eólica no Brasil e no mundo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="text-center mt-12 py-8 border-t-2 border-[#89B9EE]">
+        <p class="text-sm text-gray-500">Navegue para a próxima etapa: <a href="problema.html" class="text-[#005CB9] font-bold hover:underline">Descobrindo o Problema das Aves</a></p>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const menuMobile = document.getElementById('menu-mobile');
+        if(menuBtn){
+            menuBtn.addEventListener('click', () => {
+                menuMobile.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+</html>
